@@ -1,29 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
     background-color: #b4b2b2f8;
     color: #611DF2;
-}
-
-.cabecalho {
+    line-height: 1.6;
+}header.cabecalho {
     background-color: #611DF2;
-    padding: 10px;
-    text-align: center;
-}
-.cabecalho a:hover {
-    background-color: #8777F2;
-    transform: scale(1.05);
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.cabecalho a {
+header.cabecalho nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header.cabecalho a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header.cabecalho a:hover {
+    background-color: #8777F2;
+    transform: scale(1.05);
 }
 
 main {
@@ -32,7 +45,6 @@ main {
     margin: auto;
 }
 
-/* Flex layout para as duas seções iniciais */
 .secao__dupla {
     display: flex;
     flex-wrap: wrap;
@@ -46,31 +58,32 @@ main {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .secao__dupla figure {
     text-align: center;
+    margin-top: 15px;
 }
 
 .secao__dupla img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    
 }
 
 .tabela__IA {
     width: 100%;
     margin-top: 20px;
-    border-collapse: col#fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
 }
-
-.tabela__IA th, .tabela__IA td {
+.tabela__IA th,
+.tabela__IA td {
     padding: 10px;
     border: 1px solid black;
+    text-align: left;
 }
 
 .contato__formulario {
@@ -89,11 +102,16 @@ main {
 
 button {
     background-color: #611DF2;
-    color: #000;
+    color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8777F2;
 }
 
 .rodape {
@@ -108,11 +126,12 @@ button {
     margin-top: 20px;
 }
 
-/* Modo escuro */
+  /* Modo escuro com checkbox */
 .dark-mode {
     background-color: #1e1e1e;
     color: #8777F2;
 }
+
 .dark-mode .rodape,
 .dark-mode .cabecalho,
 .dark-mode .cabecalho a,
@@ -123,4 +142,23 @@ button {
     background-color: #333;
     color: #8777F2;
     border-color: violet;
+}
+
+  /* Responsivo */
+@media (max-width: 768px) {
+    .secao__dupla {
+    flex-direction: column;
+    }
+
+    .secao__dupla section {
+    flex: 1 1 100%;
+    }
+
+    header.cabecalho nav {
+    flex-direction: column;
+    }
+
+    header.cabecalho a {
+    margin: 5px 0;
+    }
 }
