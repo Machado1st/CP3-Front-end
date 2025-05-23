@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Responsável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav>
+            <a href="#o-que-e">O que é IA |</a>
+            <a href="#exemplos">Exemplos |</a>
+            <a href="#riscos">Riscos Éticos |</a>
+            <a href="#como-usar">Uso Responsável |</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="secao__dupla">
+            <section class="explicacao__IA" id="o-que-e">
+                <h2 class="explicacao__IA__titulo">O que é Inteligência Artificial?</h2>
+                <p class="explicacao__IA__texto">
+                    A Inteligência Artificial (IA) é uma área da ciência da computação que busca criar sistemas capazes de realizar tarefas que normalmente requerem inteligência humana, como reconhecimento de padrões, aprendizado, planejamento, seleção e resolução de problemas.
+                </p>
+                <figure>
+                    <img src="./assets/wrongtog-D03d-eQg8ac-unsplash.jpg" alt="Ilustração de uma rede neural artificial">
+                    <figcaption>Ilustração de uma rede neural artificial.</figcaption>
+                </figure>
+            </section>
+
+            <section class="exemplos__IA" id="exemplos">
+                <h2 class="exemplos__IA__titulo">Exemplos Atuais de Uso de IA</h2>
+                <ul class="exemplos__IA__lista">
+                    <li class="exemplos__IA__item">Chatbots em sites e aplicativos que automatizam o atendimento.</li>
+                    <li class="exemplos__IA__item">Diagnósticos médicos auxiliados por IA.</li>
+                    <li class="exemplos__IA__item">Reconhecimento facial em segurança e otimização de processos.</li>
+                </ul>
+                <figure>
+                    <img src="./assets/aerps-com-auqRTLrrzkc-unsplash.jpg" alt="Exemplo de interação com um chatbot">
+                    <figcaption>Exemplo de interação com um chatbot.</figcaption>
+                </figure>
+            </section>
+        </div>
+
+        <section class="riscos__IA" id="riscos">
+            <h2 class="riscos__IA__titulo">Riscos e Cuidados Éticos no Uso de IA</h2>
+            <ol class="riscos__IA__lista">
+                <li>Conheça os limites e capacidades da IA.</li>
+                <li>Automatização de tarefas perigosas.</li>
+                <li>Proteja dados pessoais e respeite a privacidade.</li>
+                <li>Promova diversidade e evite preconceitos nos algoritmos.</li>
+            </ol>
+            <table class="tabela__IA">
+                <thead>
+                    <tr>
+                        <th>Usos Positivos</th>
+                        <th>Usos Negativos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Diagnósticos médicos auxiliados por IA.</td>
+                        <td>Vigilância excessiva e invasão de privacidade</td>
+                    </tr>
+                    <tr>
+                        <td>Automatização de tarefas perigosas</td>
+                        <td>Manipulação de preferências e comportamento</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="Como_usar_IA" id="como-usar">
+            <h2 class="Como_usar_IA__titulo">Como Usar IA de Forma Segura e Responsável</h2>
+            <ul>
+                <li>Conheça os limites e capacidades da IA.</li>
+                <li>Prioritize a transparência e explicabilidade.</li>
+                <li>Proteja dados pessoais em respeito à privacidade.</li>
+                <li>Promova a diversidade e evite preconceitos nos algoritmos.</li>
+            </ul>
+        </section>
+
+        <section class="contato" id="contato">
+            <h2 class="contato__titulo">Entre em Contato</h2>
+            <form class="contato__formulario">
+                <label>Nome:</label>
+                <input type="text" name="nome" required>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                <label>Sugestão/opinião:</label>
+                <textarea name="sugestao" rows="4"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="modo__escuro">
+                <label>
+                    <input type="checkbox" onclick="document.body.classList.toggle('dark-mode')"> Modo Escuro
+                </label>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Uso Responsável da Inteligência Artificial</p>
+    </footer>
+</body>
+</html>
